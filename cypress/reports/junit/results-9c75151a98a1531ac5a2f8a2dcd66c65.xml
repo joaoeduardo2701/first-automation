@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.567" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-05-19T02:48:13" tests="0" file="cypress\e2e\login.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login" timestamp="2026-05-19T02:48:13" tests="3" time="4.565" failures="0">
+    <testcase name="Login Realizar login com sucesso" time="1.538" classname="Realizar login com sucesso">
+    </testcase>
+    <testcase name="Login Retornar erro ao logar com usuário inexistente" time="1.074" classname="Retornar erro ao logar com usuário inexistente">
+    </testcase>
+    <testcase name="Login Retornar erro ao logar com senha incorreta" time="0.997" classname="Retornar erro ao logar com senha incorreta">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -6,6 +6,8 @@ describe('Login', () => {
     cy.get('[data-test="password"]').type('secret_sauce')
     cy.get('[data-test="login-button"]').click()
 
+    cy.screenshot('login-success')
+
     cy.url().should('include', '/inventory.html')
   })
 
@@ -23,6 +25,8 @@ describe('Login', () => {
         'Username and password do not match any user in this service'
       )
 
+    cy.screenshot('login-invalid-user')
+
     cy.url().should('eq', 'https://www.saucedemo.com/')
   })
 
@@ -39,6 +43,8 @@ describe('Login', () => {
         'Username and password do not match any user in this service'
       )
 
+    cy.screenshot('login-invalid-password')
+    
     cy.url().should('eq', 'https://www.saucedemo.com/')
   })
 })
